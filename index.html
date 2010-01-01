@@ -25,153 +25,22 @@
     <link rel="stylesheet" href="footer.css">
   </head>
   <body>
-    <header>
+    <section id="hero">
       <div class="container">
-        <div class="flex">
-          <div class="logo">
-            <img src="./images/logo.svg" alt="Loopstudios logo" id="logo" />
-          </div>
+        <header>
+          <span class="logo">
+            <img src="./images/logo.svg" alt="">
+          </span>
 
-          <div class="menu__icon">
-            <img
-              src="./images/icon-hamburger.svg"
-              alt="hamburger menu icon"
-              id="hamburger__icon"
-            />
-          </div>
+          <span id="open__menu">
+            <img src="./images/icon-hamburger.svg" alt="" id="hamburger__icon">
+          </span>
 
-          <!-- navbar -->
           <nav>
-            <div class="container">
-              <div class="flex">
-                <div class="nav__logo">
-                  <img src="./images/logo.svg" alt="" />
-                </div>
-
-                <div class="close__menu">
-                  <img
-                    src="./images/icon-close.svg"
-                    alt="close menu icon"
-                    id="close__menu"
-                  />
-                </div>
-              </div>
-
-              <ul>
-                <li><a href="#">About </a></li>
-                <li><a href="#"> Careers</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Support</a></li>
-              </ul>
-            </div>
-          </nav>
-          <!-- navbar -->
-        </div>
-      </div>
-
-      <!-- modal (has its own separate stylesheet, check root folder)-->
-      <div class="modal">
-        <div class="container">
-          <div class="hero__image">
-            <img src="./images/Web-Designing-Download-PNG-Image.png" alt="" />
-          </div>
-
-          <article>
-            <h2>Sorry, this page is under construction</h2>
-
-            <button id="modal__btn">close</button>
-          </article>
-        </div>
-      </div>
-      <!-- modal -->
-
-      <!-- heading -->
-      <div class="heading">
-        <div class="container">
-          <h1>immersive experiences that deliver</h1>
-        </div>
-      </div>
-      <!-- heading -->
-    </header>
-
-    <!-- has its own separte stylesheet (check root folder) -->
-    <main>
-      <div class="container">
-        <div class="feature">
-          <!-- flex on big screens -->
-          <div class="feature__image">
-            <img
-              src="./images/mobile/image-interactive.jpg"
-              alt=""
-              id="feature__image__mobile"
-            />
-
-            <img
-              src="./images/desktop/image-interactive.jpg"
-              alt=""
-              id="feature__image__desktop"
-            />
-          </div>
-
-          <article>
-            <h2>The leader in interactive VR</h2>
-            <p>
-              Founded in 2011, Loopstudios has been producing world-class
-              virtual reality projects for some of the best companies around the
-              globe. Our award-winning creations have transformed businesses
-              through digital experiences that bind to their brand.
-            </p>
-          </article>
-        </div>
-
-        <div class="our__creations">
-          <div>
-            <h2>our creations</h2>
-
-            <span id="see__all__btn__desktop">
-              <a href="#">see all</a>
+            <span id="close__menu">
+              <img src="./images/icon-close.svg" alt="" id="close__menu__icon">
             </span>
-          </div>
 
-          <div>
-            <div class="img deep__earth">
-              <p>
-                deep <br />
-                earth
-              </p>
-            </div>
-
-            <div class="img night__arcade">
-              <p>
-                night <br />
-                arcade
-              </p>
-            </div>
-            <div class="img soccer__team__vr">
-              <p>soccer <br> team vr</p>
-            </div>
-            <div class="img the__grid"><p>the <br> grid</p> </div>
-            <div class="img from__up__above__vr"><p>from up <br> above vr</p> </div>
-            <div class="img pocket__borealis"><p>pocket <br> borealis</p> </div>
-            <div class="img the__curiosity"><p>the <br> curiosity</p> </div>
-            <div class="img make__it__fisheye"><p>make it <br> fisheye</p> </div>
-          </div>
-
-          <div id="see__all__btn__mobile">
-            <a href="#">see all</a>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container">
-        <!-- flex container -->
-        <div class="logo__x__menu">
-          <img src="./images/logo.svg" alt="" class="logo">
-
-          <div class="menu">
             <ul>
               <li><a href="#">about</a></li>
               <li><a href="#">careers</a></li>
@@ -179,23 +48,19 @@
               <li><a href="#">products</a></li>
               <li><a href="#">support</a></li>
             </ul>
-          </div>
-        </div>
+          </nav>
 
-        <div class="socials__x__copyright">
-          <div class="socials">
-            <img src="./images/icon-facebook.svg" alt="">
-            <img src="./images/icon-twitter.svg" alt="">
-            <img src="./images/icon-pinterest.svg" alt="">
-            <img src="./images/icon-instagram.svg" alt="">
+          <div class="modal">
+            
           </div>
-
-          <div class="copyright">
-            <p> © 2021 Loopstudios. All rights reserved.</p>
-          </div>
+        </header>
+        <div class="content">
+          <h1 id="main__heading">
+            immersive experiences that deliver
+          </h1>
         </div>
       </div>
-    </footer>
+    </section>
     <script src="./app.js"></script>
   </body>
 </html>
