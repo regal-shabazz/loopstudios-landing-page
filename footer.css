@@ -18,6 +18,7 @@ footer a {
     text-transform: capitalize;
     text-decoration: none;
     color: #fff;
+    transition: ease .5s;
 }
 
 footer a:hover {
