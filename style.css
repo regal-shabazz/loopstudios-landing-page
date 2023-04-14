@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Alata", sans-serif;
   font-family: "Josefin Sans", sans-serif;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -19,7 +18,7 @@ html {
 
 header {
   border: 1px solid;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("./images/mobile/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
