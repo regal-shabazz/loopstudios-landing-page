@@ -54,6 +54,13 @@ article p {
     margin-bottom: 1.5rem;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.img:hover {
+    filter: brightness(50%);
+    transform: scale(105%, 105%);
 }
 
 .deep__earth {
@@ -89,14 +96,22 @@ article p {
 }
 
 .our__creations a {
-    font-size: 1rem;
+    font-size: .8rem;
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
     border: 1px solid #000;
     padding: .5rem 2rem;
+    letter-spacing: 4px;
+    font-weight: bold;
 } 
+
+.our__creations a:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 #see__all__btn__mobile {
     text-align: center;
+    margin: 2rem 0 6rem;
 }

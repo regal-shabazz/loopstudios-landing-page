@@ -1,0 +1,45 @@
+footer {
+    background-color: #000;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+footer .logo {
+    width: initial;
+}
+
+footer li {
+    margin: 2rem 0;
+    list-style: none;
+}
+
+footer a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color:  hsl(0, 0%, 41%);
+}
+
+.socials__x__copyright {
+    margin-top: 5rem;
+}
+
+.socials {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     margin-bottom: 2rem;
+}
+
+.socials img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.socials__x__copyright {
+    color:  hsl(0, 0%, 55%);
+}
