@@ -1,10 +1,10 @@
-const hamburger_menu = document.querySelector('.menu__icon')
+const hamburger_menu = document.querySelector('#open__menu')
 const mobile_nav = document.querySelector('nav')
-const close_menu = document.querySelector('.close__menu')
+const close_menu = document.querySelector('#close__menu')
 const menu = document.querySelector('ul')
 const each_menu = document.querySelectorAll('li')
-const modal = document.querySelector('.modal')
-const modal_closeBtn = document.querySelector('#modal__btn')
+// const modal = document.querySelector('#modal')
+// const modal_closeBtn = document.querySelector('#close__modal')
 
 hamburger_menu.addEventListener("click", () => {
     mobile_nav.classList.toggle('active')
@@ -22,7 +22,7 @@ each_menu.forEach(item => {
     })
 })
 
-modal_closeBtn.addEventListener("click", () => {
-    modal.classList.remove('active')
-    menu.classList.toggle('active')
-})
+// modal_closeBtn.addEventListener("click", () => {
+//     modal.classList.remove('active')
+//     menu.classList.toggle('active')
+// })

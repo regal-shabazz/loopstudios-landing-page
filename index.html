@@ -14,7 +14,6 @@
 
     <title>Loopstudios landing page</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./modal.css" />
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,24 +21,37 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
-    <section id="hero">
+    <section role="banner" id="hero">
       <div class="container">
         <header>
           <span class="logo">
-            <img src="./images/logo.svg" alt="">
+            <img src="./images/logo.svg" alt="" />
           </span>
 
           <span id="open__menu">
-            <img src="./images/icon-hamburger.svg" alt="" id="hamburger__icon">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt=""
+              id="hamburger__icon"
+            />
           </span>
 
           <nav>
-            <span id="close__menu">
-              <img src="./images/icon-close.svg" alt="" id="close__menu__icon">
-            </span>
+            <div class="nav__header">
+              <span class="nav__logo">
+                <img src="./images/logo.svg" alt="" />
+              </span>
+              <span id="close__menu">
+                <img
+                  src="./images/icon-close.svg"
+                  alt=""
+                  id="close__menu__icon"
+                />
+              </span>
+            </div>
 
             <ul>
               <li><a href="#">about</a></li>
@@ -50,15 +62,141 @@
             </ul>
           </nav>
 
-          <div class="modal">
-            
-          </div>
+          <!-- <div id="modal">
+            <div class="modal__image">
+              <img src="./images/Web-Designing-Download-PNG-Image.png" alt="">
+            </div>
+
+            <article>
+              <h3>Oops!</h3>
+              <p>Sorry, this page isn't available yet.</p>
+
+              <button id="close__modal">close</button>
+            </article>
+          </div> -->
         </header>
         <div class="content">
-          <h1 id="main__heading">
-            immersive experiences that deliver
-          </h1>
+          <h1 id="main__heading">immersive experiences that deliver</h1>
         </div>
+      </div>
+    </section>
+
+    <section role="main" id="main">
+      <div class="container">
+        <div class="border">
+          <span class="flex">
+            <div id="feature__image">
+              <img
+                src="./images/mobile/image-interactive.jpg"
+                alt=""
+              />
+            </div>
+
+            <article>
+              <h2>the leader in interactive vr</h2>
+
+              <p>
+                Founded in 2011, Loopstudios has been producing world-class
+                virtual reality projects for some of the best companies around
+                the globe. Our award-winning creation have transformed
+                businesses through digital experiences that bind to their brand.
+              </p>
+            </article>
+          </span>
+        </div>
+
+        <span class="our__creations">
+          <h2>our creations</h2>
+
+          <a href="https://twitter.coom/__awfulCoder">see all</a>
+        </span>
+
+        <div class="creations">
+          <div>
+            <img src="./images/mobile/image-deep-earth.jpg" alt="" />
+
+            <img src="./images/desktop/image-deep-earth.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-night-arcade.jpg" alt="" />
+
+            <img src="./images/desktop/image-night-arcade.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-soccer-team.jpg" alt="" />
+
+            <img src="./images/desktop/image-soccer-team.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-grid.jpg" alt="" />
+
+            <img src="./images/desktop/image-grid.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-from-above.jpg" alt="" />
+
+            <img src="./images/desktop/image-from-above.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-pocket-borealis.jpg" alt="" />
+
+            <img src="./images/desktop/image-pocket-borealis.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-curiosity.jpg" alt="" />
+
+            <img src="./images/desktop/image-curiosity.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="./images/mobile/image-fisheye.jpg" alt="" />
+
+            <img src="./images/desktop/image-fisheye.jpg" alt="" />
+          </div>
+        </div>
+
+        <span id="see__all__btn__mobile">
+          <a href="https://twitter.coom/__awfulCoder">see all</a>
+        </span>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <span class="logo__x__footer__menu">
+          <div class="footer__logo">
+            <img src="./images/logo.svg" alt="">
+          </div>
+
+          <div class="footer__menu">
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">events</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">support</a></li>
+            </ul>
+          </div>
+        </span>
+
+        <span class="socials__x__copyright">
+          <div class="socials">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+            <img src="./images/icon-pinterest.svg" alt="">
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+
+          <div class="copyright">
+            <p>© 2021 Loopstudios. All rights reserved.</p>
+          </div>
+        </span>
       </div>
     </section>
     <script src="./app.js"></script>

@@ -1,0 +1,246 @@
+#main {
+    min-height: 100%;
+    margin-bottom: 2rem;
+}
+
+#main .container {
+  padding: 5rem 0 0rem;
+}
+
+section #feature__image img {
+  width: 100%;
+}
+
+#feature__image #desktop {
+  display: none;
+}
+
+#main article {
+  text-align: center;
+}
+
+article h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+article p {
+  line-height: 1.7;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.our__creations {
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.our__creations a {
+  display: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.our__creations h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+
+.creations {
+  
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.creations div img:nth-child(1) {
+  width: 100%;
+  display: block;
+}
+
+.creations div img:nth-child(2) {
+  display: none;
+}
+
+.creations div::before {
+  text-transform: uppercase;
+  position: absolute;
+  padding: 1rem;
+  top: 97%;
+  transform: translate(0, -100%);
+  color: #fff;
+  width: 35%;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.creations div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(
+    260deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.creations div {
+  position: relative;
+  cursor: pointer;
+}
+
+.creations div:nth-child(1)::before {
+  content: "deep earth";
+}
+
+.creations div:nth-child(2)::before {
+  content: "night arcade";
+}
+
+.creations div:nth-child(3)::before {
+  content: "soccer team vr";
+}
+
+.creations div:nth-child(4)::before {
+  content: "the grid";
+  width: 30%;
+}
+
+.creations div:nth-child(5)::before {
+  content: "from up above vr";
+  width: 40%;
+}
+
+.creations div:nth-child(6)::before {
+  content: "pocket borealis";
+}
+
+.creations div:nth-child(7)::before {
+  content: "the curiosity";
+}
+
+.creations div:nth-child(8)::before {
+  content: "make it fisheye";
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #feature__image {
+    width: 60%;
+    margin: 0 20%;
+  }
+
+  #feature__image img {
+    display: block;
+  }
+
+  .our__creations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .our__creations a {
+    display: block;
+    color: #000;
+    border: 1px solid #000;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .creations {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #main .border {
+    position: relative;
+    height: 60%;
+    margin: 10rem 0 19rem;
+  }
+
+  #main .flex {
+    display: flex;
+  }
+
+  #feature__image {
+    width: 60%;
+  }
+
+  #feature__image #mobile {
+    display: none;
+  }
+
+  #feature__image #desktop {
+    display: block;
+  }
+
+  #main article {
+    text-align: left;
+    padding: 0 0 0 4rem;
+    position: absolute;
+    background-color: #fff;
+    width: 55%;
+    top: 110%;
+    left: 100%;
+    transform: translate(-100%, -110%);
+  }
+
+  article h2 {
+    font-size: 3rem;
+  }
+
+  .our__creations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .our__creations a {
+    display: block;
+    color: #000;
+    border: 1px solid #000;
+    padding: 0.5rem 1.5rem;
+    transition: ease 0.5s;
+  }
+
+  .our__creations a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .creations {
+    grid-template-columns: repeat(4, 23.5%);
+  }
+
+  .creations div:hover {
+    opacity: 0.4;
+  }
+
+  .creations div img:nth-child(1) {
+    display: none;
+  }
+
+  .creations div img:nth-child(2) {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+

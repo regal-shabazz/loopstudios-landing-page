@@ -20,8 +20,13 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+#hero .container {
+  height: 100vh;
 }
 
 /* styles all list items and links for mobile and desktop viewa */
@@ -51,10 +56,52 @@ nav {
   height: 100vh;
   background-color: #000;
   transition: ease 0.5s;
+  z-index: 1;
 }
 
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+}
+
+.nav__logo {
+  display: block;
+}
+
+nav #close__menu {
+  display: block;
+}
+
+nav ul {
+  margin: 5rem 5%;
+}
+
+nav li {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+nav a:focus,
+nav a:active {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* for javascript */
 nav.active {
   left: 0;
+}
+/* ********* */
+
+.container .content {
+  position: relative;
+  height: 60%;
 }
 
 h1 {
@@ -62,15 +109,78 @@ h1 {
   font-weight: 100;
   text-transform: uppercase;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  width: 100%;
+  max-width: 700px;
   color: #fff;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, -50%);
 }
 
-.modal {
-  display: none;
+/* 
+#modal {
+  
+  position: absolute;
+  top: -1000%;
+  opacity: 0.2;
+  transform: translate(0, -50%);
+  width: 80%;
+  max-width: 500px;
+  height: 55%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 7px 6px rgba(255, 247, 247, 0.461);
+  transition: ease .8s;
+  overflow: hidden;
+  margin: 2rem;
 }
 
-@media screen and (min-width: 769px) {
+/* for javascript */
+/* #modal.active {
+  top: 50%;
+  opacity: 1;
+}
+
+.modal__image {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.modal__image img {
+  width: 100%;
+}
+
+#modal article {
+  text-align: center;
+}
+
+#modal h3 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+} 
+
+#modal p {
+  font-weight: bold;
+  color: rgba(205, 63, 63, 0.842);
+  margin: .5rem 0 2rem;
+  font-size: .8rem;
+}
+
+#modal button {
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-weight: bold;
+}  */
+
+@media screen and (min-width: 768px) {
   #hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("./images/desktop/image-hero.jpg");
@@ -93,13 +203,24 @@ h1 {
     background-color: initial;
   }
 
+  .nav__header {
+    display: none;
+  }
+
   nav #close__menu {
     display: none;
   }
 
   nav ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
+    margin: unset;
+  }
+
+  nav li {
+    margin-bottom: unset;
   }
 
   nav a {
@@ -107,6 +228,7 @@ h1 {
     transition: ease 1s;
     padding-bottom: 0.5rem;
     position: relative;
+    font-size: 1rem;
   }
 
   nav a::after {
@@ -122,5 +244,14 @@ h1 {
 
   nav a:hover::after {
     width: 50%;
+  }
+
+  h1 {
+    top: 70%;
+    font-size: 5rem;
+  }
+
+  #modal {
+    display: none;
   }
 }
